@@ -46,13 +46,13 @@ public class LanzamientoTask implements Callable<Lanzamiento> {
     // Método para aplicar el efecto de cada condición especial
     private int aplicarCondicion(int resultado, String condicion) {
         switch (condicion) {
-            case "Viento Fuerte":
+            case "Viento Fuerte aplicado":
                 resultado = Math.max(resultado - 1, 1);
                 break;
-            case "Superficie Irregular":
+            case "Superficie Irregular aplicado":
                 resultado = Math.min(resultado + 1, 6);
                 break;
-            case "Lluvia Intensa":
+            case "Lluvia Intensa aplicada":
                 // Efecto aleatorio: sumar o restar 1
                 if (ThreadLocalRandom.current().nextBoolean()) {
                     resultado = Math.min(resultado + 1, 6);
@@ -60,7 +60,7 @@ public class LanzamientoTask implements Callable<Lanzamiento> {
                     resultado = Math.max(resultado - 1, 1);
                 }
                 break;
-            case "Ninguna":
+            case "Ninguna modificación aplicada":
             default:
                 // Sin modificación
                 break;

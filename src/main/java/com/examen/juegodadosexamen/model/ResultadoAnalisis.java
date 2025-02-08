@@ -52,12 +52,12 @@ public class ResultadoAnalisis {
 
     @Override
     public String toString() {
-        return "ResultadoAnalisis{" +
+        return "Resultado Analisis{" +
                 "lanzamientos=" + lanzamientos +
                 ", promedio=" + promedio +
-                ", valorMasFrecuente=" + valorMasFrecuente +
-                ", desviacionEstandar=" + desviacionEstandar +
-                ", promedioPorCondicion=" + promedioPorCondicion +
+                ", valor mas frecuente=" + valorMasFrecuente +
+                ", desviacion estandar=" + desviacionEstandar +
+                ", promedio por condicion=" + promedioPorCondicion +
                 '}';
     }
 }

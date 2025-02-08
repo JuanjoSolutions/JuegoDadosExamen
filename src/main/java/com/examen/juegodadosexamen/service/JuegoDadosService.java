@@ -28,7 +28,7 @@ public class JuegoDadosService {
             try {
                 lanzamientos.add(future.get());
             } catch (ExecutionException | InterruptedException e) {
-                System.err.println("Error al obtener resultado: " + e.getMessage());
+                System.err.println("Error al obtener el resultado: " + e.getMessage());
                 throw e;
             }
         }

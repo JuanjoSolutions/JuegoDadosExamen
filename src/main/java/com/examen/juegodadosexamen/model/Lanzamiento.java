@@ -43,9 +43,9 @@ public class Lanzamiento {
     public String toString() {
         return "Lanzamiento{" +
                 "id=" + id +
-                ", resultadoInicial=" + resultadoInicial +
-                ", resultadoFinal=" + resultadoFinal +
-                ", condicionEspecial='" + condicionEspecial + '\'' +
+                ", resultado Inicial=" + resultadoInicial +
+                ", resultado final=" + resultadoFinal +
+                ", condicion especial='" + condicionEspecial + '\'' +
                 '}';
     }
 }
